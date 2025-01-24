@@ -1,12 +1,13 @@
 :root {
     /* Cores */
-    --color-black: #5C5C5C;
+    --color-black: #101011;
     --color-white: white;
     --color-beige-light: #f5f4ed;
-    --color-yellow: #E3E655;
-    --color-light-green: #A7E655;
-    --color-dark-yellow: #E6C355;
-    --color-vivid-green: #6AE655;
+    --color-beige-dark: #e0e0d6;
+    --color-light-pink: #f2c3d3;
+    --color-yellow: #f7d56f;
+    --color-light-purple: #bfacf9;
+    --color-light-blue: #0563bb;
 
     /* Tipografia */
     --font-primary: Poppins, sans-serif;
@@ -167,7 +168,7 @@ input:checked ~ label .menu {
 }
 
 .typing {
-    color: #0563bb;
+    color: var(--color-light-blue);
 }
 
 #section1 {
