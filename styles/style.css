@@ -46,6 +46,10 @@ a {
     color: var(--color-black);
 }
 
+.menu-text {
+    color: var(--color-beige-light);
+}
+
 .icon {
     fill: var(--color-black);
 }
