@@ -1,142 +1,121 @@
 :root {
-    --preto: black;
-    --branco: white;
-    --beje-01: #f5f4ed;
-    --beje-02: #e0e0d6;
-    --amarelo: #f7d56f;
-    --roxo-claro: #bfacf9;
-    --poppins: Poppins, sans-serif;
-    --livvic: Livvic, sans-serif;
-    --texto-mobile: 1rem;
-    --h1-mobile: 3rem;
-    --h2-mobile: 2.25rem;
-    --texto: 1.125rem;
-    --h1: 5rem;
-    --h2: 3rem;
-    --h3: 2.375;
-    --h3: 2rem;
+    /* Cores */
+    --color-black: black;
+    --color-white: white;
+    --color-beige-light: #f5f4ed;
+    --color-beige-dark: #e0e0d6;
+    --color-yellow: #f7d56f;
+    --color-purple-light: #bfacf9;
+
+    /* Tipografia */
+    --font-primary: Poppins, sans-serif;
+    --font-secondary: Livvic, sans-serif;
+    --font-size-text-mobile: 1rem;
+    --font-size-h1-mobile: 3rem;
+    --font-size-h2-mobile: 2.25rem;
+    --font-size-text: 1.125rem;
+    --font-size-h1: 5rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.375rem;
 }
 
-HTML {
+html {
     scroll-behavior: smooth;
 }
 
 * {
-    margin: 0rem;
-    padding: 0rem;
-    border: 0rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--color-white);
 }
 
-.texto {
-    font: normal var(--texto-mobile) var(--poppins);
+.text {
+    font: normal var(--font-size-text-mobile) var(--font-primary);
 }
 
-.titulo {
-    font: normal var(--h2-mobile) var(--poppins);
+.title {
+    font: normal var(--font-size-h2-mobile) var(--font-primary);
 }
 
-header{
-    height: 10vh;
-    width: 100vw;
-
-    display: flex;
-    align-items: center;
-    justify-content: right ;
+body {
+    background-color: var(--color-beige-light);
 }
 
-.menu{
-    border-radius: 1.5625rem;
-
+.menu {
+    border-radius: 20px;
     position: fixed;
+    top: 4%;
     left: 5%;
-    top: 2.5%;
-    transform: translate(-5%, 0%);
-
-    width: 8.5rem;
+    width: 2.5rem;
     height: 2.5rem;
-
-    background-color: var(--preto);
-    
+    background-color: var(--color-black);
     overflow: hidden;
-
     cursor: pointer;
-
-    transition: height .5s ease;
+    transition: all 0.5s ease;
 }
 
-.nao {
+.menu-closed {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    left: 50%;
-    top: .5rem;
-
-    transform: translate(-50%);
+    justify-content: left;
+    margin-left: 0.75rem;
 }
 
-.burguer {
+.burger {
     width: 1rem;
     height: 0.0625rem;
-
     display: block;
 
-    margin-right: 0.3125rem;
-
-    background-color: var(--branco);
-
-    transition: all .5s ease;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
 }
 
-.burguer:after, .burguer:before {
+.burger::before, 
+.burger::after {
+    content: '';
     width: 100%;
     height: 100%;
-
-    content: '';
-
     position: relative;
     display: block;
-    
-    background-color: var(--branco);
-
-    transition: all .5s ease;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
 }
 
-.burguer:before {
+.burger::before {
     top: -0.3125rem;
 }
 
-.burguer:after {
-    top: +0.3125rem;
+.burger::after {
+    top: 0.3125rem;
 }
 
-input:checked ~ label .burguer{
+input:checked ~ label .burger {
     transform: rotate(45deg);
-  }
-  
-  input:checked ~ label .burguer::after{
+}
+
+input:checked ~ label .burger::after {
     top: -0.0625rem;
     transform: rotate(90deg);
-  }
-  
-  input:checked ~ label .burguer::before{
-    top: 0rem;
+}
+
+input:checked ~ label .burger::before {
+    top: 0;
     transform: rotate(90deg);
-  }
+}
 
 .menu-text {
     display: flex;
-
     margin-left: 0.3125rem;
-
-    color: var(--branco);
+    color: var(--color-white);
 }
 
 .navbar {
@@ -144,37 +123,24 @@ input:checked ~ label .burguer{
     position: relative;
     justify-content: center;
 
-    margin-top: 2.5rem;
 }
 
-.navbar > ul > li {
+.navbar ul li {
     position: relative;
     width: 12.5rem;
-    margin: 0.3125rem 0rem;
-
+    margin: 0.3125rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar > ul > li > a {
+.navbar ul li a {
     width: 12.5rem;
     display: flex;
     justify-content: center;
 }
 
-input:checked ~ label .menu{
+input:checked ~ label .menu {
     height: 12.1875rem;
-}
-
-.titulo-pagina {
-    float: right;
-
-    position: relative;
-    right: 5%;
-    transform: translate(5%, 0%);
-}
-
-body {
-    background-color: var(--beje-01);
+    width: 7.5rem;
 }
