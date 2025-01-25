@@ -177,8 +177,15 @@ input:checked ~ label .menu {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    gap: 1rem;
 }
 
 #section1 > h1 {
     text-align: center;
+}
+
+.person-image {
+    width: 65%;
+
+    border-radius: 30px;
 }

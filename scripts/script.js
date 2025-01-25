@@ -3,7 +3,7 @@ function toggleMenu() {
     checkbox.checked = !checkbox.checked;
   }
 
-  const texts = ["my website!", "our platform!", "this page!"];
+  const texts = ["desenvolvedor!", "gamer!", "estudante!"];
   let textIndex = 0;
   let charIndex = 0;
 
