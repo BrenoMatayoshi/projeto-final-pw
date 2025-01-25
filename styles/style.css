@@ -43,6 +43,11 @@ a {
 }
 
 .title {
+    font: normal var(--font-size-h1-mobile) var(--font-primary);
+    color: var(--color-black);
+}
+
+.title2 {
     font: normal var(--font-size-h2-mobile) var(--font-primary);
     color: var(--color-black);
 }
@@ -171,12 +176,15 @@ input:checked ~ label .menu {
     color: var(--color-light-blue);
 }
 
+section {
+    height: 100vh;
+}
+
 #section1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     gap: 1rem;
 }
 
@@ -188,4 +196,11 @@ input:checked ~ label .menu {
     width: 65%;
 
     border-radius: 30px;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
