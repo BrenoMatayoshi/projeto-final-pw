@@ -15,6 +15,7 @@
     --font-size-text-mobile: 1rem;
     --font-size-h1-mobile: 3rem;
     --font-size-h2-mobile: 2.25rem;
+    --font-size-h3-mobile: 1.6875rem;
     --font-size-text: 1.125rem;
     --font-size-h1: 5rem;
     --font-size-h2: 3rem;
@@ -52,8 +53,19 @@ a {
     color: var(--color-black);
 }
 
+.title3 {
+    font: normal var(--font-size-h3-mobile) var(--font-primary);
+    color: var(--color-black);
+}
+
 .menu-text {
     color: var(--color-beige-light);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .icon {
@@ -144,7 +156,7 @@ input:checked ~ label .burger::before {
 
 .navbar ul li {
     position: relative;
-    width: 12.5rem;
+    width: 9rem;
     margin: 0.3125rem 0;
     display: flex;
     align-items: center;
@@ -152,14 +164,14 @@ input:checked ~ label .burger::before {
 }
 
 .navbar ul li a {
-    width: 12.5rem;
+    width: 9rem;
     display: flex;
     justify-content: center;
 }
 
 input:checked ~ label .menu {
     height: 12.1875rem;
-    width: 7.5rem;
+    width: 9rem;
 }
 
 .cursor {
@@ -194,13 +206,10 @@ section {
 
 .person-image {
     width: 65%;
-
     border-radius: 30px;
 }
 
-#section2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+.about-title {
+    text-align: center;
 }
+
