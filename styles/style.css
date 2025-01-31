@@ -209,7 +209,80 @@ section {
     border-radius: 30px;
 }
 
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    height: 60vh;
+}
+
 .about-title {
     text-align: center;
 }
 
+.linha-branca {
+    background-color: var(--color-black);
+    height: 2px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.linha-branca > span {
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background-color: var(--color-light-blue);
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.texto-sobre > p {
+    margin-left: 10px;
+}
+
+.anim-lateral {
+    display: flex;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.linha {
+    height: auto;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: auto;
+    width: 85%;
+    display: flex;
+}
+
+.caixa-principal {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: #1010117e;
+    height: auto;
+    position: absolute;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 1rem;
+}
+
+.icone {
+    background-color: #0563bb;
+    padding: .3rem .75rem;
+    border-radius: 25px;
+    font: normal .75rem var(--font-primary);
+    color: var(--color-black);
+}
