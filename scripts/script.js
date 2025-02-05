@@ -22,13 +22,12 @@ function typeEffect() {
 }
 typeEffect();
 
-const myObserver = new IntersectionObserver((entries, observer) => {
+const myObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting && !entry.target.classList.contains("show")) { 
-            entry.target.classList.add("show");
-
-            // REMOVE A OBSERVAÇÃO IMEDIATAMENTE PARA EVITAR MÚLTIPLOS DISPAROS
-            observer.unobserve(entry.target);
+        if (entry.isIntersecting) { 
+            entry.target.classList.add("show")
+        } else {
+            entry.target.classList.remove("show")
         }
     });
 });
