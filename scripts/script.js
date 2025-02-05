@@ -32,4 +32,4 @@ const myObserver = new IntersectionObserver((entries) => {
     });
 });
 
-document.querySelectorAll(".card").forEach(card => myObserver.observe(card));
+document.querySelectorAll(".hidden").forEach(card => myObserver.observe(card));
