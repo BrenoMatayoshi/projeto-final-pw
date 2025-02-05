@@ -58,6 +58,11 @@ a {
     color: var(--color-black);
 }
 
+.title-card {
+    font: normal 1.2rem var(--font-primary);
+    color: var(--color-black);
+}
+
 .menu-text {
     color: var(--color-beige-light);
 }
@@ -77,10 +82,11 @@ body {
 }
 
 .menu {
+    z-index: 1000;
     border-radius: 20px;
     position: fixed;
-    top: 4%;
-    left: 5%;
+    top: 20px; /* alterar*/
+    left: 20px; /* alterar*/
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--color-black);
@@ -246,43 +252,86 @@ section {
     margin-left: 10px;
 }
 
-.anim-lateral {
+#section3 {
     display: flex;
-    height: 100%;
-    margin-top: 3rem;
-}
-
-.linha {
-    height: auto;
-    width: 15%;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .container {
-    height: auto;
-    width: 85%;
-    display: flex;
+    height: 100%;
+    max-width: 400px;
+
 }
 
-.caixa-principal {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    background-color: #1010117e;
-    height: auto;
+.linha {
+    width: 4px;
+    height: 100%;
+    background-color: #101011;
     position: absolute;
+    margin-left: 25px;
+    border-radius: 2px;
 }
 
-.tecnologias {
+.card {
+    margin-top: 20px;
+    width: 100%;
     display: flex;
-    gap: 1rem;
+    justify-content: end;
+
 }
 
-.icone {
-    background-color: #0563bb;
-    padding: .3rem .75rem;
-    border-radius: 25px;
-    font: normal .75rem var(--font-primary);
-    color: var(--color-black);
+.left{
+    transform: translateX(50%);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.show {
+    transform: translateX(0%);
+}
+
+.texto-projetos {
+    width: 82%;
+    background-color: red;
+    padding: 10px;
+    border-radius: .5rem;
+    margin-right: 10px;
+}
+
+.texto-projetos > p{
+    margin: 5px;
+}
+
+.pla {
+    border:  7px solid transparent;
+    height: 0;
+    margin-top: 13px;
+}
+
+.botao-anim {
+    position: relative;
+    margin-left: 7.35px;
+    margin-top: 20px;
+    background-color: cyan;
+    border-radius: 50%;
+    border: black solid 4px;
+    padding: 6px;
+}
+
+.olc {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.icones {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+
+}
+
+.div-icones {
+    margin: 5px 7.5px 10px 0px;
 }
