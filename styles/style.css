@@ -261,6 +261,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    height: auto;
 }
 
 .container {
@@ -272,7 +273,7 @@ section {
 
 .linha {
     width: 4px;
-    height: 80%;
+    height: 110%;
     background-color: #101011;
     position: absolute;
     margin-left: 25px;
@@ -284,6 +285,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: end;
+    position: relative;
 }
 
 .left{
