@@ -45,4 +45,10 @@
         width: 125px;
         border-radius: 30px;
     }
+
+    
+
+    .dark-theme .menu{
+        background-color: rgb(46, 45, 43);
+    }
 }
