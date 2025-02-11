@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/mediaQuery.css">
     <title>Document</title>
 </head>
 
@@ -23,10 +24,18 @@
                 </div>
                 <div class="navbar">
                     <ul class="links">
-                        <li><a class="text menu-text" href="#section1" onclick="toggleMenu()">Início</a></li>
-                        <li><a class="text menu-text" href="#section2" onclick="toggleMenu()">Sobre</a></li>
-                        <li><a class="text menu-text" href="#section3" onclick="toggleMenu()">Projetos</a></li>
-                        <li><a class="text menu-text" href="#section4" onclick="toggleMenu()">Skills</a></li>
+                        <li>
+                            <a class="text menu-text" href="#section1" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg><span>Início</span></a>
+                        </li>
+                        <li>
+                            <a class="text menu-text" href="#section2" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg><span>Sobre</span></a>
+                        </li>
+                        <li>
+                            <a class="text menu-text" href="#section3" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="auto" fill="#"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg><span>Projetos</span></a>
+                        </li>
+                        <li>
+                            <a class="text menu-text" href="#section4" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#"><path d="M640-160v-280h160v280H640Zm-240 0v-640h160v640H400Zm-240 0v-440h160v440H160Z"/></svg><span>Skills</span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +79,7 @@
                 <div class="texto-sobre">
                     <p class="text">Atualmente cursando Análise e Desenvolvimento de Sistemas.</p>
                     <p class="text">Buscando posições desafiadoras onde minhas habilidades encontrem amplas oportunidades
-                        para atualização e crescimento da empresa.</p>
+                        para atualização e crescimento na empresa.</p>
                     <p class="text">Telefone: (38) 98839-5092</p>
                     <p class="text">Email: brenomasato@gmail.com</p>
                 </div>
@@ -92,11 +101,11 @@
                         </div>
                         <div class="texto-projetos">
                             <div class="div-icones">
-                                <span class="icones">Java</span>
+                                <span class="icones text">Java</span>
                             </div>
                             <h3 class="title-card" style="color: white;">Trabalho final de Programação Oritentada a Objetos</h3>
-                            <li class="texto-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
-                            <li class="texto-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                            <li class="text projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                            <li class="text projetos-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
                         </div>
                     </div>
                 </div>
@@ -109,13 +118,32 @@
                         </div>
                         <div class="texto-projetos">
                             <div class="div-icones">
-                                <span class="icones">Teste</span>
-                                <span class="icones">Teste</span>
-                                <span class="icones">Teste</span>
+                                <span class="icones text">Teste</span>
+                                <span class="icones text">Teste</span>
+                                <span class="icones text">Teste</span>
                             </div>
                             <h3 class="title-card" style="color: white;">Lorem ipsum dolor sit amet</h3>
-                            <li class="texto-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
-                            <li class="texto-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                            <li class="projetos-texto text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                            <li class="projetos-texto text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="olc">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="auto" viewBox="0 -960 960 960" width="auto" fill="black" class="botao-anim hidden"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                    </div>
+                    <div class="card left hidden">
+                        <div class="pla" style="border-right: 7px solid rgb(33, 150, 243);">
+                        </div>
+                        <div class="texto-projetos">
+                            <div class="div-icones">
+                                <span class="icones text">Teste</span>
+                                <span class="icones text">Teste</span>
+                                <span class="icones text">Teste</span>
+                            </div>
+                            <h3 class="title-card" style="color: white;">Lorem ipsum dolor sit amet</h3>
+                            <li class="projetos-texto text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
+                            <li class="projetos-texto text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nemo consequatur possimus! Sunt numquam corporis.</li>
                         </div>
                     </div>
                 </div>
@@ -132,8 +160,7 @@
                     <li class="skills text">GOLANG</li>
                     <li class="skills text">HTML</li>
                     <li class="skills text">CSS</li>
-                    <li class="skills text">Teste</li>
-                    <li class="skills text">Teste</li>
+                    <li class="skills text">JS</li>
                 </ul>
             </div>
         </section>
@@ -161,7 +188,7 @@
                 </svg>
             </a>
         </div>
-        <p>Feito em HTML, CSS e JS</p>
+        <p class="text">Feito em HTML, CSS e JS</p>
     </footer>
     <script src="scripts/script.js"></script>
 </body>

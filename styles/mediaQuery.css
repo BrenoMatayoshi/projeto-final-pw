@@ -1,0 +1,48 @@
+@media (min-width: 990px) {
+    .menu-closed{
+        display: none;
+    }
+
+    .menu {
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 15vw;
+        background-color: var(--color-beige-light);
+        display: flex;
+        align-items: center;
+    }
+
+    input:checked ~ label .menu {
+        height: 100vh;
+        width: 15vw;
+    }
+
+    .navbar svg {
+        display: block;
+    }
+
+    a span {
+        display: none;
+    }
+
+    .navbar ul li a{
+        color: var(--color-beige-light);
+        fill: var(--color-beige-light);
+        background-color: var(--color-gray);
+        border-radius: 50%;
+        padding: 1rem;
+        width: 56px;
+        transition: all .5s ease;
+    }
+    
+    a:hover span{
+        display: block;
+    }
+
+    .navbar ul li a:hover{
+        width: 125px;
+        border-radius: 30px;
+    }
+}

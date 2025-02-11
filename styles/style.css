@@ -7,7 +7,8 @@
     --color-light-pink: #f2c3d3;
     --color-yellow: #f7d56f;
     --color-light-purple: #bfacf9;
-    --color-light-blue: #0563bb;
+    --color-light-blue: rgb(33, 150, 243);
+    --color-gray: #343a40;
 
     /* Tipografia */
     --font-primary: Poppins, sans-serif;
@@ -95,7 +96,6 @@ body {
     height: 2.5rem;
     background-color: var(--color-black);
     overflow: hidden;
-    cursor: pointer;
     transition: all 0.5s ease;
 }
 
@@ -157,11 +157,14 @@ input:checked ~ label .burger::before {
     color: var(--color-beige-light);
 }
 
+.navbar svg {
+    display: none;
+}
+
 .navbar {
     display: flex;
     position: relative;
     justify-content: center;
-
 }
 
 .navbar ul li {
@@ -215,7 +218,7 @@ section {
 }
 
 .person-image {
-    width: 65%;
+    max-width: 65%;
     border-radius: 30px;
 }
 
@@ -274,7 +277,7 @@ section {
 .linha {
     width: 4px;
     height: 110%;
-    background-color: #101011;
+    background-color: var(--color-gray);
     position: absolute;
     margin-left: 25px;
     border-radius: 2px;
@@ -311,7 +314,7 @@ section {
 
 .texto-projetos {
     width: 82%;
-    background-color: var(--color-black);
+    background-color: var(--color-gray);
     color: var(--color-beige-light);
     padding: 10px;
     border-radius: .5rem;
@@ -320,6 +323,10 @@ section {
 
 .texto-projetos > p{
     margin: 5px;
+}
+
+.projetos-texto {
+    color: var(--color-beige-light);
 }
 
 .pla {
@@ -331,9 +338,9 @@ section {
 .botao-anim {
     position: relative;
     margin-left: 7.35px;
-    background-color: cyan;
+    background-color: var(--color-beige-dark);
     border-radius: 50%;
-    border: black solid 4px;
+    border: var(--color-gray) solid 4px;
     padding: 6px;
     scale: 1;
 }
@@ -364,8 +371,7 @@ section {
 }
 
 .icones {
-    background-color: white;
-    color: black;
+    background-color: var(--color-beige-light);
     padding: 5px 15px;
     border-radius: 20px;
 }
@@ -404,10 +410,11 @@ section {
     margin: 7px;
     padding: 5px 10px;
     color: white;
-    background: #343a40;
+    background: var(--color-gray);
 }
 
 footer {
+    margin-top: 15vh;
     height: 25vh;
     display: flex;
     justify-content: space-evenly;
